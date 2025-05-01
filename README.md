@@ -1,0 +1,1 @@
+This project uses the Google Gemini API to automatically generate a psychotherapy SOAP note with Mental Status Examination (MSE) and Risk Assessment from a YouTube video. It provides basic statistics for the note including word count per section, percentage of total word count represented by each section, and average sentence length.
