@@ -65,6 +65,21 @@ def word_count_percentages(word_count_dict):
             word_count_percentages[key] = round(100*(word_count_dict[key] / total_word_count), 1)
     return word_count_percentages
 
+def average_sentence_length(sections_dict, word_count_dict):
+    """
+    Calculates the average sentence length in the full note.
+
+    :param sections_dict: dictionary containing section names as keys and section text as values
+    :param word_count_dict: dictionary containing section header as key and word count as value
+    :return: average number of words per sentence (in full note)
+    """
+    full_text = " ".join(sections_dict.values())
+    sentences = re.split(r'[.!?]', full_text)
+    sentences = [s.strip() for s in sentences]
+    total_words = word_count_dict['Total']
+    total_sentences = len(sentences)
+    return round(total_words / total_sentences, 0)
+
 
 def main():
     # load API key from environment variables
@@ -85,13 +100,14 @@ def main():
                 ),
                 # passes prompt to Gemini for note generation
                 types.Part(text='Generate a SOAP style psychotherapy note based on the contents of the video. Include a Mental Status Examination and Risk Assessment.'
-                                'Use these headings:'
-                                'Subjective: '
-                                'Objective: '
-                                'Assessment: '
-                                'Plan: '
-                                'Mental Status Examination: '
-                                'Risk Assessment: '
+                                ''
+                                'Use the following headings and write content according to the associated guidelines for each section:'
+                                'Subjective: Symptoms and related factors as described by patient. Include Chief Complaint or presenting problem.'
+                                'Objective: Objective signs and symptoms observable by clinician, such as body language, affect, appearance, and speech rate and tone.'
+                                'Assessment: Clinician\'s assessment of presenting problem and possible causes based on review of both subjective and objective data.'
+                                'Plan: Plan for future evaluation and/or treatment for each presenting problem, including any recommendations for diagnostic tests, referrals to other providers, and recommendation for follow up with current provider.'
+                                'Mental Status Examination: Review of client\'s current presentation according to standard Mental Status Examination components: Appearance, Behavior, Motor Activity, Speech, Mood, Affect, Thought Process, Thought Content, Perceptions, Cognition, Insight, and Judgment.'
+                                'Risk Assessment: Brief evaluation of any indications that patient may be a risk to self or others, including mentions of suicidal thoughts or self-harming behaviors. Specifically note if no risks indicated at this time.'
                                 ''
                                 'Do not include any text such as disclaimers or therapist signatures following the end of the listed sections.'
                            )
@@ -116,15 +132,17 @@ def main():
     # Call function to separate section texts and save to variable
     text_sections = split_sections(response.text, expected_sections)
 
+    # Print sections to console for easy reference
     for key, value in text_sections.items():
-        print(f'{key}: {value}')
+        print(f'{key}:\n{value}')
 
-    # call function to get word count of each section and save to dictionary
+    # Call functions to evaluate descriptive statistics
     word_counts = get_word_counts(text_sections)
-
     percentages = word_count_percentages(word_counts)
+    avg_sent_length = average_sentence_length(text_sections, word_counts)
 
-    with open('prompt1_evaluation.txt', mode='w') as file2:
+    # Print descriptive statistics to a file
+    with open('prompt1_statistics.txt', mode='w') as file2:
         file2.write("Word Count per Section:\n")
         for key, value in word_counts.items():
             file2.write(f'{key}: {value}\n')
@@ -132,8 +150,8 @@ def main():
         file2.write("Percent of Total Word Count:\n")
         for key, value in percentages.items():
             file2.write(f'{key}: {value}%\n')
-
-
+        file2.write("\n")
+        file2.write(f"Average Number of Words per Sentence (in full text): {avg_sent_length}\n")
 
 
 if __name__ == '__main__':

@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f3f2f703-4f10-4980-bc14-6a542c9c7c89" name="Changes" comment="Created functions to separate sections and count number of words per section. Print AI response to output file.">
+    <list default="true" id="f3f2f703-4f10-4980-bc14-6a542c9c7c89" name="Changes" comment="Added function to evaluate percentage of total word count represented by each section. Write descriptive statistics out to file. Added docstrings for functions.">
+      <change afterPath="$PROJECT_DIR$/prompt1_clinical_eval.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/original_prompt.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +44,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Python.main.executor": "Run",
+    "Python.original_prompt.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
@@ -55,7 +57,7 @@
   }
 }]]></component>
   <component name="RunManager">
-    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="original_prompt" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="SOAP_note_generator" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -69,7 +71,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\Noctu\PycharmProjects\SOAP_note_generator\original_prompt.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -80,7 +82,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.main" />
+        <item itemvalue="Python.original_prompt" />
       </list>
     </recent_temporary>
   </component>
@@ -101,7 +103,7 @@
       <option name="presentableId" value="Default" />
       <updated>1745895643132</updated>
       <workItem from="1745895660585" duration="50000" />
-      <workItem from="1745895721040" duration="24180000" />
+      <workItem from="1745895721040" duration="39832000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -119,7 +121,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745955512292</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added function to evaluate percentage of total word count represented by each section. Write descriptive statistics out to file. Added docstrings for functions.">
+      <option name="closed" value="true" />
+      <created>1746035124437</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1746035124437</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -128,9 +138,10 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Created functions to separate sections and count number of words per section. Print AI response to output file." />
-    <option name="LAST_COMMIT_MESSAGE" value="Created functions to separate sections and count number of words per section. Print AI response to output file." />
+    <MESSAGE value="Added function to evaluate percentage of total word count represented by each section. Write descriptive statistics out to file. Added docstrings for functions." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added function to evaluate percentage of total word count represented by each section. Write descriptive statistics out to file. Added docstrings for functions." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/SOAP_note_generator$main.coverage" NAME="main Coverage Results" MODIFIED="1746031196779" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/SOAP_note_generator$main.coverage" NAME="original_prompt Coverage Results" MODIFIED="1746066638000" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

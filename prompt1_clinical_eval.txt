@@ -1,0 +1,43 @@
+Clinical Evaluation Criteria:
+- Accuracy: Note should not include any inaccurate data.
+    If a section or data point was not discussed in the session, it should either be omitted from the note or include a note that this was not discussed.
+- Objectivity: Assessments of patient and presenting problems should be clearly supported by data (no assumptions).
+    Note should include relevant patient quotes to support subjective information.
+    Note should avoid use of judgmental language.
+- Thoroughness: All information from the session that a reasonable clinician would believe was necessary or important to document should be included in the note.
+- Brevity: Note should remain as brief as possible while including all necessary information. Avoid repetition of content.
+
+
+Notes from various iterations using this prompt:
+- Accuracy:
+    - Not clear from note that this a follow-up and extending discussion of same topic from prior visit
+        e.g. sometimes includes a Chief Complaint that implies this is a new topic
+    - Does not differentiate between Chief Complaint vs. HPI content in Subjective section
+
+- Objectivity:
+    - No direct quotes from client appearing in note
+    - Note over-emphasizes impact of positive COVID test on current symptoms (e.g. will note as a primary trigger for current symptoms despite no evidence to support this)
+    - Most iterations do well at giving specific examples of objective observations, e.g. "She exhibited anxious body language, including frequent hand gestures and touching her face and hair."
+
+- Thoroughness:
+    - Most iterations don't include differential diagnoses
+        - Some iterations: "Consideration of potential underlying issues, such as anxiety and depression, should be made."
+        - when they are included, they don't include rationale
+    - No mention of fact that client becoming a parent herself is contributing to reflection on this topic at this time
+    - Most iterations don't note rumination: e.g., "I can't stop thinking about it"
+    - No discussion of therapy interventions used in session (e.g. identifying physical sensations of anger, sitting with discomfort, exploring possible outcomes of speaking up more / worst-case scenarios)
+    - Note does not consistently discuss how pattern with mother generalizes to other relationships (sometimes does)
+    - Plan to further discuss relationship / communication with husband at next visit should be priority - not always mentioned
+    - Some iterations minimize/ignore discussion of patient's sense of identity / feeling "lost"
+
+- Brevity:
+    - Repetition between Objective and MSE sections (but likely inherent to including both sections in this format)
+    - Risk Assessment section is overly wordy and repetitive:
+        e.g. "No immediate risk to self or others is indicated at this time.  While the client expressed significant emotional distress, there were no overt signs of suicidal thoughts or self-harming behaviors.  However, ongoing monitoring for changes in affect or behavior is warranted, especially given the current self-isolation.  Safety planning should be discussed in subsequent sessions."
+
+
+
+
+- Some iterations include in Plan some more specific therapy interventions to consider, e.g. use of CBT, role-playing for communication skills - but not all do
+- Plan: Some iterations include symptoms to monitor for further intervention, e.g. "Monitor the patient for signs of depression or anxiety, and consider referral to a psychiatrist for medication evaluation if warranted." - but not all do
+
