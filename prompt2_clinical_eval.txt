@@ -1,0 +1,23 @@
+Comparison to original prompt output:
+
+Accuracy:
+    - Note clearly indicates that this is a follow-up.
+    - Note clearly states presenting problem, or selects a relevant quote by patient as a Chief Complaint (e.g., “I’m just angry. I feel like I’m angry.”)
+
+Objectivity:
+    - Includes a few direct quotes from patient to support assessment of primary problem.
+    - Some iterations still over-emphasize impact of positive COVID test on current symptoms, but less frequently
+    - Objective observations are still noted appropriately, but more succinctly.
+
+Thoroughness:
+    - Notes now include differential diagnoses.
+        - Most iterations select a relevant primary differential (e.g., "Adjustment Disorder with Mixed Anxiety and Depressed Mood"), but secondary differentials are sometimes less applicable (e.g. Intermittent Explosive Disorder).
+    - Use of direct quotes helps to encapsulate patient's emotional state. Rumination is more often represented as a symptom.
+    - Some iterations still do not cover connections between presenting problems and relationships with husband and children
+    - Plan more often covers specific interventions to be used in future
+
+Brevity:
+    - Some iterations are notably shorter, some are of similar length to original in terms of word count. Similar sentence length.
+    - Significant changes in length of sections:
+        -Increase in percentage of note dedicated to Subjective section. Decreases in percent of note dedicated to MSE and Risk Assessment sections.
+    - Change in note distribution reflects a decrease in excessive and/or repetitive text in Risk Assessment section, and decrease in overlap between Objective and MSE sections.

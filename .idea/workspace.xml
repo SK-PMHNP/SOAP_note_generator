@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f3f2f703-4f10-4980-bc14-6a542c9c7c89" name="Changes" comment="Renamed main.py to original_prompt.py to differentiate between prompt1 vs. prompt2. Added function to calculate average sentence length in words. Expanded original prompt. Wrote clinical evaluation criteria and made notes for various iterations of Prompt 1.">
-      <change afterPath="$PROJECT_DIR$/revised_prompt.py" afterDir="false" />
+    <list default="true" id="f3f2f703-4f10-4980-bc14-6a542c9c7c89" name="Changes" comment="Edited prompt according to clinical evaluation criteria. Added file for running revised prompt and saving output and statistics to files.">
+      <change afterPath="$PROJECT_DIR$/prompt2_clinical_eval.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prompt1_clinical_eval.txt" beforeDir="false" afterPath="$PROJECT_DIR$/prompt1_clinical_eval.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/revised_prompt.py" beforeDir="false" afterPath="$PROJECT_DIR$/revised_prompt.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +128,7 @@
       <option name="presentableId" value="Default" />
       <updated>1745895643132</updated>
       <workItem from="1745895660585" duration="50000" />
-      <workItem from="1745895721040" duration="43065000" />
+      <workItem from="1745895721040" duration="45777000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -162,7 +162,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746067216658</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Edited prompt according to clinical evaluation criteria. Added file for running revised prompt and saving output and statistics to files.">
+      <option name="closed" value="true" />
+      <created>1746070523619</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1746070523619</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -173,10 +181,11 @@
     <MESSAGE value="Created functions to separate sections and count number of words per section. Print AI response to output file." />
     <MESSAGE value="Added function to evaluate percentage of total word count represented by each section. Write descriptive statistics out to file. Added docstrings for functions." />
     <MESSAGE value="Renamed main.py to original_prompt.py to differentiate between prompt1 vs. prompt2. Added function to calculate average sentence length in words. Expanded original prompt. Wrote clinical evaluation criteria and made notes for various iterations of Prompt 1." />
-    <option name="LAST_COMMIT_MESSAGE" value="Renamed main.py to original_prompt.py to differentiate between prompt1 vs. prompt2. Added function to calculate average sentence length in words. Expanded original prompt. Wrote clinical evaluation criteria and made notes for various iterations of Prompt 1." />
+    <MESSAGE value="Edited prompt according to clinical evaluation criteria. Added file for running revised prompt and saving output and statistics to files." />
+    <option name="LAST_COMMIT_MESSAGE" value="Edited prompt according to clinical evaluation criteria. Added file for running revised prompt and saving output and statistics to files." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/SOAP_note_generator$revised_prompt.coverage" NAME="revised_prompt Coverage Results" MODIFIED="1746069596441" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/SOAP_note_generator$revised_prompt.coverage" NAME="revised_prompt Coverage Results" MODIFIED="1746072870185" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/SOAP_note_generator$main.coverage" NAME="original_prompt Coverage Results" MODIFIED="1746066638000" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
