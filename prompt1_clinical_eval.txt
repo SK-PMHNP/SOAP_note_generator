@@ -28,7 +28,8 @@ Notes from various iterations using this prompt:
     - No discussion of therapy interventions used in session (e.g. identifying physical sensations of anger, sitting with discomfort, exploring possible outcomes of speaking up more / worst-case scenarios)
     - Note does not consistently discuss how pattern with mother generalizes to other relationships (sometimes does)
     - Plan to further discuss relationship / communication with husband at next visit should be priority - not always mentioned
-    - Some iterations minimize/ignore discussion of patient's sense of identity / feeling "lost"
+    - Some iterations minimize/ignore discussion of patient's sense of identity / feeling "lost
+    - Some iterations include in Plan some more specific therapy interventions to consider, e.g. use of CBT, role-playing for communication skills - but not all do
 
 - Brevity:
     - Repetition between Objective and MSE sections (but likely inherent to including both sections in this format)
@@ -38,6 +39,6 @@ Notes from various iterations using this prompt:
 
 
 
-- Some iterations include in Plan some more specific therapy interventions to consider, e.g. use of CBT, role-playing for communication skills - but not all do
-- Plan: Some iterations include symptoms to monitor for further intervention, e.g. "Monitor the patient for signs of depression or anxiety, and consider referral to a psychiatrist for medication evaluation if warranted." - but not all do
+
+
 

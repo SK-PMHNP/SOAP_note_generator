@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f3f2f703-4f10-4980-bc14-6a542c9c7c89" name="Changes" comment="Added function to evaluate percentage of total word count represented by each section. Write descriptive statistics out to file. Added docstrings for functions.">
-      <change afterPath="$PROJECT_DIR$/prompt1_clinical_eval.txt" afterDir="false" />
+    <list default="true" id="f3f2f703-4f10-4980-bc14-6a542c9c7c89" name="Changes" comment="Renamed main.py to original_prompt.py to differentiate between prompt1 vs. prompt2. Added function to calculate average sentence length in words. Expanded original prompt. Wrote clinical evaluation criteria and made notes for various iterations of Prompt 1.">
+      <change afterPath="$PROJECT_DIR$/revised_prompt.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/original_prompt.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prompt1_clinical_eval.txt" beforeDir="false" afterPath="$PROJECT_DIR$/prompt1_clinical_eval.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +45,7 @@
   "keyToString": {
     "Python.main.executor": "Run",
     "Python.original_prompt.executor": "Run",
+    "Python.revised_prompt.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
@@ -56,7 +57,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.revised_prompt">
     <configuration name="original_prompt" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="SOAP_note_generator" />
       <option name="ENV_FILES" value="" />
@@ -80,8 +81,32 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="revised_prompt" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="SOAP_note_generator" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/revised_prompt.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.revised_prompt" />
         <item itemvalue="Python.original_prompt" />
       </list>
     </recent_temporary>
@@ -103,7 +128,7 @@
       <option name="presentableId" value="Default" />
       <updated>1745895643132</updated>
       <workItem from="1745895660585" duration="50000" />
-      <workItem from="1745895721040" duration="39832000" />
+      <workItem from="1745895721040" duration="43065000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -129,7 +154,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746035124437</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Renamed main.py to original_prompt.py to differentiate between prompt1 vs. prompt2. Added function to calculate average sentence length in words. Expanded original prompt. Wrote clinical evaluation criteria and made notes for various iterations of Prompt 1.">
+      <option name="closed" value="true" />
+      <created>1746067216658</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1746067216658</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -139,9 +172,11 @@
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Created functions to separate sections and count number of words per section. Print AI response to output file." />
     <MESSAGE value="Added function to evaluate percentage of total word count represented by each section. Write descriptive statistics out to file. Added docstrings for functions." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added function to evaluate percentage of total word count represented by each section. Write descriptive statistics out to file. Added docstrings for functions." />
+    <MESSAGE value="Renamed main.py to original_prompt.py to differentiate between prompt1 vs. prompt2. Added function to calculate average sentence length in words. Expanded original prompt. Wrote clinical evaluation criteria and made notes for various iterations of Prompt 1." />
+    <option name="LAST_COMMIT_MESSAGE" value="Renamed main.py to original_prompt.py to differentiate between prompt1 vs. prompt2. Added function to calculate average sentence length in words. Expanded original prompt. Wrote clinical evaluation criteria and made notes for various iterations of Prompt 1." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/SOAP_note_generator$revised_prompt.coverage" NAME="revised_prompt Coverage Results" MODIFIED="1746069596441" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/SOAP_note_generator$main.coverage" NAME="original_prompt Coverage Results" MODIFIED="1746066638000" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
