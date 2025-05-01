@@ -1,0 +1,18 @@
+Word Count per Section:
+Subjective: 95
+Objective: 63
+Assessment: 110
+Plan: 94
+Mental Status Examination: 123
+Risk Assessment: 38
+Total: 523
+
+Percent of Total Word Count:
+Subjective: 18.2%
+Objective: 12.0%
+Assessment: 21.0%
+Plan: 18.0%
+Mental Status Examination: 23.5%
+Risk Assessment: 7.3%
+
+Average Number of Words per Sentence (in full text): 11.0
